@@ -60,3 +60,4 @@ youtube_search_python
 motor
 envparse
 mongo client 
+loguru
