@@ -93,6 +93,7 @@ if ENV:
     SPAMWATCH_API = os.environ.get("SPAMWATCH_API", None)
     IBM_WATSON_CRED_URL = os.environ.get("IBM_WATSON_CRED_URL", None)
     IBM_WATSON_CRED_PASSWORD = os.environ.get("IBM_WATSON_CRED_PASSWORD", None)
+    MONGO_DB_URI = os.environ.get("MONGO_DB_URI", None)
 
     ALLOW_CHATS = os.environ.get("ALLOW_CHATS", True)
 
@@ -170,7 +171,7 @@ else:
     REDIS_URL = Config.REDIS_URL
     IBM_WATSON_CRED_URL = Config.IBM_WATSON_CRED_URL
     IBM_WATSON_CRED_PASSWORD = Config.IBM_WATSON_CRED_PASSWORD
-
+    MONGO_DB_URI = Config.MONGO_DB_URI
     
     try:
         BL_CHATS = set(int(x) for x in Config.BL_CHATS or [])
