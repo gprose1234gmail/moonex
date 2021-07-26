@@ -34,8 +34,8 @@ from search_engine_parser import GoogleSearch
 from youtubesearchpython import VideosSearch
 
 from MashaRoBot import get_str_key
-from MashaRoBot.function.inlinehelper import *
-from MashaRoBot.function.pluginhelpers import fetch, json_prettify
+from MashaRoBot.functions.inlinehelper import *
+from MashaRoBot.functions.pluginhelpers import fetch, json_prettify
 from MashaRoBot import pbot as app
 
 OPENWEATHERMAP_ID = get_str_key("OPENWEATHERMAP_ID", "")
