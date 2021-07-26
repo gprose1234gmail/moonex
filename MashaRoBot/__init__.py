@@ -3,10 +3,13 @@ import os
 import sys
 import time
 import spamwatch
-
 import telegram.ext as tg
+
 from pyrogram import Client, errors
 from telethon import TelegramClient
+from envparse import env
+
+from MashaRoBot.utils.logger import log
 
 StartTime = time.time()
 
@@ -93,9 +96,14 @@ if ENV:
     SPAMWATCH_API = os.environ.get("SPAMWATCH_API", None)
     IBM_WATSON_CRED_URL = os.environ.get("IBM_WATSON_CRED_URL", None)
     IBM_WATSON_CRED_PASSWORD = os.environ.get("IBM_WATSON_CRED_PASSWORD", None)
-    MONGO_DB_URI = os.environ.get("MONGO_DB_URI", None)
-
+    BOT_USERNAME = os.environ.get("BOT_USERNAME", None)
     ALLOW_CHATS = os.environ.get("ALLOW_CHATS", True)
+    TG_USER_SESSION = os.environ.get("TG_USER_SESSION", True)
+    TG_BOT_TOKEN = os.environ.get("TOKEN", True)
+    AUTH_USERS = os.environ.get("AUTH_USERS", True)
+    TG_BOT_SESSION = os.environ.get("TG_BOT_SESSION", "bot")
+    TG_BOT_WORKERS = os.environ.get("TG_BOT_WORKERS", "4")
+    DATABASE_NAME = os.environ.get("DATABASE_NAME", True)
 
     try:
         BL_CHATS = set(int(x) for x in os.environ.get("BL_CHATS", "").split())
@@ -171,8 +179,8 @@ else:
     REDIS_URL = Config.REDIS_URL
     IBM_WATSON_CRED_URL = Config.IBM_WATSON_CRED_URL
     IBM_WATSON_CRED_PASSWORD = Config.IBM_WATSON_CRED_PASSWORD
-    MONGO_DB_URI = Config.MONGO_DB_URI
-    
+    BOT_USERNAME = bot_info.username
+    TG_BOT_SESSION = Config.TG_BOT_SESSION
     try:
         BL_CHATS = set(int(x) for x in Config.BL_CHATS or [])
     except ValueError:
@@ -197,6 +205,87 @@ updater = tg.Updater(TOKEN, workers=WORKERS, use_context=True)
 telethn = TelegramClient("masha", API_ID, API_HASH)
 pbot = Client("mashapbot", api_id=API_ID, api_hash=API_HASH, bot_token=TOKEN)
 dispatcher = updater.dispatcher
+
+
+DEFAULTS = {
+
+    "LOAD_MODULES": True,
+
+    "DEBUG_MODE": True,
+
+    "REDIS_HOST": "localhost",
+
+    "REDIS_PORT": 6379,
+
+    "REDIS_DB_FSM": 1,
+
+    "MONGODB_URI": "localhost",
+
+    "MONGO_DB": "DaisyX",
+
+    "API_PORT": 8080,
+
+    "JOIN_CONFIRM_DURATION": "30m",
+
+}
+
+def get_int_key(name, required=False):
+    if name in DEFAULTS:
+        default = DEFAULTS[name]
+    else:
+        default = None
+    if not (data := env.int(name, default=default)) and not required:
+        log.warn("No int key: " + name)
+        return None
+    elif not data:
+        log.critical("No int key: " + name)
+        sys.exit(2)
+    else:
+        return data
+
+
+def get_list_key(name, required=False):
+    if name in DEFAULTS:
+        default = DEFAULTS[name]
+    else:
+        default = None
+    if not (data := env.list(name, default=default)) and not required:
+        log.warn("No list key: " + name)
+        return []
+    elif not data:
+        log.critical("No list key: " + name)
+        sys.exit(2)
+    else:
+        return data
+
+
+def get_bool_key(name, required=False):
+    if name in DEFAULTS:
+        default = DEFAULTS[name]
+    else:
+        default = None
+    if not (data := env.bool(name, default=default)) and not required:
+        log.warn("No bool key: " + name)
+        return False
+    elif not data:
+        log.critical("No bool key: " + name)
+        sys.exit(2)
+    else:
+        return data
+
+def get_str_key(name, required=False):
+    if name in DEFAULTS:
+        default = DEFAULTS[name]
+    else:
+        default = None
+    if not (data := env.str(name, default=default)) and not required:
+        log.warn("No str key: " + name)
+        return None
+    elif not data:
+        log.critical("No str key: " + name)
+        sys.exit(2)
+    else:
+        return data
 
 DRAGONS = list(DRAGONS) + list(DEV_USERS)
 DEV_USERS = list(DEV_USERS)
