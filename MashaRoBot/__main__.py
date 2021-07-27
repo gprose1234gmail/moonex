@@ -82,9 +82,9 @@ buttons = [
             text=" ADD KITTY TO YOUR GROUP ", url="t.me/Kittyprobot?startgroup=true"),
     ],
     [
-        InlineKeyboardButton(text="ABOUT", callback_data="masha_"),
+        InlineKeyboardButton(text="Help", callback_data="help_back"),
 
-        InlineKeyboardButton(text="HELP", callback_data="help_back"),
+        InlineKeyboardButton(text="About", callback_data="masha_about"),
                              
     ],
     [
@@ -350,7 +350,7 @@ def help_button(update, context):
 @run_async
 def Masha_about_callback(update: Update, context: CallbackContext):
     query = update.callback_query
-    if query.data == "masha_":
+    if query.data == "masha_about":
         query.message.edit_text(
             text="""Hey are you come again to see me [😃](https://telegra.ph/file/2772d29518df083cb111a.jpg) but i am little busy now 
                     😁i am always helping others to manage their groups
