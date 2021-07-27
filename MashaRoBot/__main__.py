@@ -85,6 +85,8 @@ buttons = [
     [
         InlineKeyboardButton(
             text="➕️ ADD ✵ Kitty ✵ TO YOUR GROUP ➕️", url="t.me/Kittyprobot?startgroup=true"),
+    ],
+    [
         InlineKeyboardButton(text="Founder👿",url="https://t.me/THE_BOSS_OF_TELEGRAM"),
     ],
     [
