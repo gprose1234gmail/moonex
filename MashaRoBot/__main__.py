@@ -77,7 +77,7 @@ PM_START_TEXT = """
 `Hellow My name is` [★](https://telegra.ph/file/2772d29518df083cb111a.jpg)guardian[★](https://telegra.ph/file/2772d29518df083cb111a.jpg)
 `I'm a powerful group management bot to your groups click 𝗛𝗘𝗟𝗣 To know how to use me .` 
 """
-MASHA_IMG="https://telegra.ph/file/2772d29518df083cb111a.jpg"
+KITTY_IMG="https://telegra.ph/file/2772d29518df083cb111a.jpg"
 buttons = [
     [
         InlineKeyboardButton(
@@ -208,7 +208,7 @@ def start(update: Update, context: CallbackContext):
 
         else:
             update.effective_message.reply_photo(
-                MASHA_IMG,
+                KITTY_IMG,
                 PM_START_TEXT,
                 reply_markup=InlineKeyboardMarkup(buttons),
                 parse_mode=ParseMode.MARKDOWN,
