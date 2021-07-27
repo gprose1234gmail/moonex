@@ -79,17 +79,20 @@ KITTY_IMG="https://telegra.ph/file/9509a3e2c1bdc8e092e09.jpg"
 buttons = [
     [
         InlineKeyboardButton(
-            text=" ADD Guardian TO YOUR GROUP ", url="t.me/guardiantgbot?startgroup=true"),
+            text=" ADD KITTY TO YOUR GROUP ", url="t.me/Kittyprobot?startgroup=true"),
     ],
     [
         InlineKeyboardButton(text="ABOUT", callback_data="masha_"),
-        InlineKeyboardButton(text=" UPDATES", url="https://t.me/GUARDIANsuppurt"),
+
         InlineKeyboardButton(text="HELP", callback_data="help_back"),
                              
     ],
     [
         InlineKeyboardButton(
             text="TRY INLINE", switch_inline_query_current_chat="alive"
+        ),
+        InlineKeyboardButton(
+            text="support",url="https://t.me/kittysupport"
         ),
     ],
 ]
