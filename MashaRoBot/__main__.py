@@ -74,10 +74,18 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-`Hellow My name is` [★](https://telegra.ph/file/2772d29518df083cb111a.jpg)guardian[★](https://telegra.ph/file/2772d29518df083cb111a.jpg)
-`I'm a powerful group management bot to your groups click 𝗛𝗘𝗟𝗣 To know how to use me .` 
-"""
-KITTY_IMG="https://telegra.ph/file/2772d29518df083cb111a.jpg"
+`வணக்கம்! The devil
+
+நான் Kitty
+
+💠சக்திவாய்ந்த Telegram 🤖 ProBot.
+
+💠உங்கள் குழுவை பாதுகாக்க 🌐 வடிவமைக்கப்பட்டது! 
+
+💠கூடுதல் வேடிக்கையான அம்சங்களுடன் 🥳
+
+💠உங்கள் குழுவில் சேர்த்து என்னுடன் மகிழுங்கள்! ... ❤️ """
+KITTY_IMG="https://telegra.ph/file/9509a3e2c1bdc8e092e09.jpg"
 buttons = [
     [
         InlineKeyboardButton(
