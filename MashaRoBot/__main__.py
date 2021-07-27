@@ -74,31 +74,45 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-`Hellow My name is` *Masha*
-`I'm here to help you manage your groups! Hit` *📚Commands* `button below to find out more about how to use me to my full potential.` 
+__Vanakkam🤗__ 
+__My name is__ **Kitty**\n__One of the Most Powerfull Telegram ProBot to Manage Your Groups🤗,feel free to add to your groups!!__
+__And mainly Created for Tamil users❤️. Many Tamil Fun Tools are there😋. You can check with /help ❣️!__
+__Created by__ **@THE_BOSS_OF_TELEGRAM**
 """
 
 buttons = [
     [
         InlineKeyboardButton(
-            text="➕️ ADD MASHA TO YOUR GROUP ➕️", url="t.me/MashaRoBot?startgroup=true"),
+            text="➕️ ADD ✵ Kitty ✵ TO YOUR GROUP ➕️", url="t.me/Kittyprobot?startgroup=true"),
+        InlineKeyboardButton(text="Founder👿",url="https://t.me/THE_BOSS_OF_TELEGRAM"),
     ],
     [
         InlineKeyboardButton(text="ℹ️ ABOUT", callback_data="masha_"),
         InlineKeyboardButton(text="📚 COMMANDS", callback_data="help_back"),
     ],
     [
-        InlineKeyboardButton(
-            text="💾 SOURCE", callback_data="source_"),
-        InlineKeyboardButton(
-            text="👥 SUPPORT", url="https://t.me/wastebots"
-        ),
+        InlineKeyboardButton(text="Kitty Support😍",url="https://t.me/kittysupport"),
+        InlineKeyboardButton(text="Global logs🥰",url="https://t.me/kittygbanlogs"),
     ],
 ]
 
 
 HELP_STRINGS = """
-*『HELP BUTTONS HERE』*"""
+Hey there! My name is [Kitty](https://telegra.ph/file/1deb171608d1bf5743fde.jpg)🥰.
+I'm a modular group management bot with a few fun extras😋! And I can help you with some tamil fun features💥 \
+I am mainly made for Tamil users to Enjoy me ❤️ because here all Tamil Fun features are there😋. Plx check it😇 \
+And you please check down for some commands🤗. 
+*Main* commands available:
+ 💠 - /start: start the bot❤️
+ 💠 - /help: PM's you this message😅.
+ 💠 - /help <module name>: PM's you info about that module😇.
+ 💠 - /source: Information about my source🤫.
+ 💠 - /settings:
+   🔹 - in PM: will send you your settings for all supported modules🤗.
+   🔹 - in a group: will redirect you to pm, with all that chat's settings🙂.
+{}
+And the following👇:
+"""
 
 
 DONATE_STRING = """No need.. I'm rich"""
