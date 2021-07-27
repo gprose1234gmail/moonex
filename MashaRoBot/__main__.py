@@ -89,7 +89,7 @@ buttons = [
     ],
     [
         InlineKeyboardButton(
-            text="TRY INLINE", switch_inline_query_current_chat="alive"
+            text="TRY INLINE", callback_data="source_"
         ),
         InlineKeyboardButton(
             text="support",url="https://t.me/kittysupport"
