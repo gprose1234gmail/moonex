@@ -113,7 +113,6 @@ And you please check down for some commands🤗.
  💠 - /settings:
    🔹 - in PM: will send you your settings for all supported modules🤗.
    🔹 - in a group: will redirect you to pm, with all that chat's settings🙂.
-{}
 And the following👇:
 """
 
