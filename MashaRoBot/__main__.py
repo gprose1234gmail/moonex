@@ -74,7 +74,7 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """ Kitty started """
-` 
+
 KITTY_IMG="https://telegra.ph/file/9509a3e2c1bdc8e092e09.jpg"
 buttons = [
     [
