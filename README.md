@@ -25,7 +25,7 @@ The easiest way to deploy this Bot
  
 ## CREDITS
 
-▪️ [PaulSonOfLars](https://github.com/PaulSonOfLars/tgbot)
+▪️ [Anonymous么kid](https://t.me/DANGER_OF_TELEGRAM)
 ▪️ [Saitama](https://github.com/AnimeKaizoku)
 ▪️ [Loli-Killer](https://github.com/Loli-Killer)
 ▪️ [RealAkito](https://github.com/RealAkito)
