@@ -87,15 +87,18 @@ buttons = [
             text="➕️ ADD ✵ Kitty ✵ TO YOUR GROUP ➕️", url="t.me/Kittyprobot?startgroup=true"),
     ],
     [
-        InlineKeyboardButton(text="Founder👿",url="https://t.me/THE_BOSS_OF_TELEGRAM"),
+        InlineKeyboardButton(text="Founder👿", url="https://t.me/THE_BOSS_OF_TELEGRAM"),
     ],
     [
         InlineKeyboardButton(text="ℹ️ ABOUT", callback_data="masha_"),
         InlineKeyboardButton(text="📚 COMMANDS", callback_data="help_back"),
     ],
     [
-        InlineKeyboardButton(text="Kitty Support😍",url="https://t.me/kittysupport"),
-        InlineKeyboardButton(text="Global logs🥰",url="https://t.me/kittygbanlogs"),
+        InlineKeyboardButton(
+                   text="Kitty Support😍", url="https://t.me/kittysupport"),
+        InlineKeyboardButton(
+                   text="Global logs🥰", url="https://t.me/kittygbanlogs"
+       ),
     ],
 ]
 
