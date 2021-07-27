@@ -74,7 +74,7 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-Vanakkam🤗 
+Vanakkam🤗
 My name is **Kitty**
 One of the Most Powerfull Telegram ProBot to Manage Your Groups🤗,feel free to add to your groups!!
 And mainly Created for Tamil users❤️. Many Tamil Fun Tools are there😋. You can check with /help ❣️!
@@ -84,21 +84,18 @@ Created by **@THE_BOSS_OF_TELEGRAM**
 buttons = [
     [
         InlineKeyboardButton(
-            text="➕️ ADD ✵ Kitty ✵ TO YOUR GROUP ➕️", url="t.me/Kittyprobot?startgroup=true"),
+            text="➕️ ADD Kitty TO YOUR GROUP ➕️", url="https://t.me/Kittyprobot?startgroup=true"),
     ],
     [
-        InlineKeyboardButton(text="Founder👿", url="https://t.me/THE_BOSS_OF_TELEGRAM"),
+        InlineKeyboardButton(text="Founder👿",url="https://t.me/THE_BOSS_OF_TELEGRAM")
     ],
     [
         InlineKeyboardButton(text="ℹ️ ABOUT", callback_data="masha_"),
         InlineKeyboardButton(text="📚 COMMANDS", callback_data="help_back"),
     ],
     [
-        InlineKeyboardButton(
-                   text="Kitty Support😍", url="https://t.me/kittysupport"),
-        InlineKeyboardButton(
-                   text="Global logs🥰", url="https://t.me/kittygbanlogs"
-       ),
+        InlineKeyboardButton(text="Global logs🥰",url="https://t.me/kittygbanlogs"),
+        InlineKeyboardButton(text="Kitty Support😍",url="https://t.me/kittysupport"),
     ],
 ]
 
@@ -118,7 +115,6 @@ And you please check down for some commands🤗.
    🔹 - in a group: will redirect you to pm, with all that chat's settings🙂.
 And the following👇:
 """
-
 
 DONATE_STRING = """No need.. I'm rich"""
 
@@ -365,16 +361,11 @@ def Masha_about_callback(update: Update, context: CallbackContext):
     query = update.callback_query
     if query.data == "masha_":
         query.message.edit_text(
-            text=""" ℹ️ I'm *MASHA*, a powerful group management bot built to help you manage your group easily.
-                 ❍ I can restrict users.
-                 ❍ I can greet users with customizable welcome messages and even set a group's rules.
-                 ❍ I have an advanced anti-flood system.
-                 ❍ I can warn users until they reach max warns, with each predefined actions such as ban, mute, kick, etc.
-                 ❍ I have a note keeping system, blacklists, and even predetermined replies on certain keywords.
-                 ❍ I check for admins' permissions before executing any command and more stuffs
-                 \n_Masha's licensed under the GNU General Public License v3.0_
-                 Here is the [💾Repository](https://github.com/Mr-Dark-Prince/MashaRoBot).
-                 If you have any question about Masha, let us know at @WasteBots.""",
+            text="""
+🔱I am Private Source buddy😅
+🔱If you want to clone me contact my [master](https://t.me/THE_BOSS_OF_TELEGRAM)🤗
+🔱Powered by [KittySupport](t.me/kittysupport)
+""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
@@ -400,8 +391,8 @@ def Source_about_callback(update: Update, context: CallbackContext):
     query = update.callback_query
     if query.data == "source_":
         query.message.edit_text(
-            text=""" Hi..🤗 I'm *MASHA*
-                 \nHere is the [Source Code](https://github.com/Mr-Dark-Prince/MashaRoBot) .""",
+            text=""" Hi..🤗 I'm *🦊 Fox X V2 Bot*
+                 """,
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=False,
             reply_markup=InlineKeyboardMarkup(
