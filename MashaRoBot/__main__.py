@@ -74,10 +74,11 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-__Vanakkam🤗__ 
-__My name is__ **Kitty**\n__One of the Most Powerfull Telegram ProBot to Manage Your Groups🤗,feel free to add to your groups!!__
-__And mainly Created for Tamil users❤️. Many Tamil Fun Tools are there😋. You can check with /help ❣️!__
-__Created by__ **@THE_BOSS_OF_TELEGRAM**
+Vanakkam🤗 
+My name is **Kitty**
+One of the Most Powerfull Telegram ProBot to Manage Your Groups🤗,feel free to add to your groups!!
+And mainly Created for Tamil users❤️. Many Tamil Fun Tools are there😋. You can check with /help ❣️!
+Created by **@THE_BOSS_OF_TELEGRAM**
 """
 
 buttons = [
