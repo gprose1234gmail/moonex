@@ -11,10 +11,10 @@ from MashaRoBot.modules.helper_funcs.chat_status import dev_plus
 def reply(update, context):
     args = update.effective_message.text.split(None, 1)
     creply = args[1]
-    reply_to_message(update.effective_message, creply)
+    send_message.reply_to_message(update.effective_message, creply)
 
 
-ADD_CCHAT_HANDLER = DisableAbleCommandHandler("kitty", reply)
+ADD_CCHAT_HANDLER = DisableAbleCommandHandler("kitty", send)
 dispatcher.add_handler(ADD_CCHAT_HANDLER)
 __command_list__ = ["kitty"]
 __handlers__ = [ADD_CCHAT_HANDLER]
