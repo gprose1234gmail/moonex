@@ -31,7 +31,7 @@ async def lego(event):
     h += int(h*0.21)
     image_width, image_height = img.size
     draw.text(((image_widthz-w)/2, (image_heightz-h)/2), text, font=font, fill=(255, 255, 255))
-    x = (image_widthz-w)/2
+    x = (image_widthz-w)/4
     y= ((image_heightz-h)/2+6)
     draw.text((x, y), text, font=font, fill="black", stroke_width=25, stroke_fill="yellow")
     fname2 = "LogoByYone.png"
@@ -80,7 +80,7 @@ async def lego(event):
     if os.path.exists(fname2):
             os.remove(fname2)
  except Exception as e:
-   await event.reply(f'Error Report @rosebakthan, {e}')
+   await event.reply(f'Error Report , {e}')
 
 file_help = os.path.basename(__file__)
 file_help = file_help.replace(".py", "")
