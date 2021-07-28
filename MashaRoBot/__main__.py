@@ -73,7 +73,7 @@ def get_readable_time(seconds: int) -> str:
     return ping_time
 
 
-PM_START_TEXT = """ வனக்கம் *{}* நன் Kittty 😍
+PM_START_TEXT = """ வனக்கம் *{}* நன் Kittty [😍](https://telegra.ph/file/2a0e766cb7481414ea9fe.jpg)
 நான் ஒரு சக்திவாய்ந்த புரோபோட்😃
 நான் பல Fun கருவிகளைக் கொண்டிருக்கிறேன்😋
 Tamil users காக தயாரிக்கப்படுகிறது🥳
@@ -215,7 +215,7 @@ def start(update: Update, context: CallbackContext):
             update.effective_message.reply_text(
 
                 PM_START_TEXT,
-                KITTY_IMG,
+
                 reply_markup=InlineKeyboardMarkup(buttons),
                 parse_mode=ParseMode.MARKDOWN,
                 timeout=60,
