@@ -2,7 +2,7 @@ from telegram.ext import run_async
 
 from MashaRoBot import dispatcher
 from MashaRoBot.modules.disable import DisableAbleCommandHandler
-from MashaRoBot.modules.helper_funcs.alt import send_message
+from MashaRoBot.modules.helper_funcs.alternate import send_message
 from MashaRoBot.modules.helper_funcs.chat_status import dev_plus
 
 
