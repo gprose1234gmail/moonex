@@ -74,7 +74,7 @@ async def can_change_info(message):
         isinstance(p, types.ChannelParticipantAdmin) and p.admin_rights.change_info
     )
 
-@register(pattern="(nightmode|Nightmode|NightMode|nt) ?(.*)")
+@register(pattern="(nightmode|Nightmode|NightMode|nt|group) ?(.*)")
 async def profanity(event):
     if event.fwd_from:
         return
