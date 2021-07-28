@@ -74,7 +74,7 @@ async def can_change_info(message):
         isinstance(p, types.ChannelParticipantAdmin) and p.admin_rights.change_info
     )
 
-@register(pattern="(nightmode|Nightmode|NightMode|nt|group) ?(.*)")
+@register(pattern="(nightmode|Nightmode|NightMode|nt) ?(.*)")
 async def profanity(event):
     if event.fwd_from:
         return
@@ -129,7 +129,7 @@ async def job_close():
     for pro in chats:
         try:
             await tbot.send_message(
-              int(pro.chat_id), "12:00 Am, Group Is Closing Till 6 Am. Night Mode Started ! \n**Powered by KITTY**"
+              int(pro.chat_id), "12:00 Am, Group Is Closing Till 6 Am. Night Mode Started ! \n**Powered By Evlie**"
             )
             await tbot(
             functions.messages.EditChatDefaultBannedRightsRequest(
@@ -151,7 +151,7 @@ async def job_open():
     for pro in chats:
         try:
             await tbot.send_message(
-              int(pro.chat_id), "06:00 Am, Group Is Opening.\n**Powered By KITTY**"
+              int(pro.chat_id), "06:00 Am, Group Is Opening.\n**Powered By Masha**"
             )
             await tbot(
             functions.messages.EditChatDefaultBannedRightsRequest(
@@ -169,7 +169,7 @@ scheduler.start()
 
 __help__ = """
 
-  will update soon 
+ ❍ /nightmode on/off
 
 **Note:** Night Mode chats get Automatically closed at 12pm(IST)
 and Automatically openned at 6am(IST) To Prevent Night Spams.
