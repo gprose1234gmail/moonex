@@ -1,6 +1,6 @@
-from YoneRobot.events import register
-from YoneRobot import OWNER_ID
-from YoneRobot import telethn as tbot
+from MashaRoBot.events import register
+from MashaRoBot import OWNER_ID
+from MashaRoBot import telethn as tbot
 import os 
 from PIL import Image, ImageDraw, ImageFont
 
