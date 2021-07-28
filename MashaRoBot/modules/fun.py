@@ -342,7 +342,7 @@ __help__ = """
 """
 
 SANITIZE_HANDLER = DisableAbleCommandHandler("sanitize", sanitize)
-RUNS_HANDLER = DisableAbleCommandHandler("joke", joke)
+JOKE_HANDLER = DisableAbleCommandHandler("joke", joke)
 SLAP_HANDLER = DisableAbleCommandHandler("slap", slap)
 PAT_HANDLER = DisableAbleCommandHandler("pat", pat)
 ROLL_HANDLER = DisableAbleCommandHandler("roll", roll)
