@@ -15,8 +15,8 @@ GIF_ID = "CgACAgQAAx0CSVUvGgAC7KpfWxMrgGyQs-GUUJgt-TSO8cOIDgACaAgAAlZD0VHT3Zynpr
 
 
 @run_async
-def runs(update: Update, context: CallbackContext):
-    update.effective_message.reply_text(random.choice(fun_strings.RUN_STRINGS))
+def joke(update: Update, context: CallbackContext):
+    update.effective_message.reply_text(random.choice(fun_strings.JOKE_STRINGS))
 
 
 @run_async
@@ -325,7 +325,7 @@ def weebify(update: Update, context: CallbackContext):
 
 
 __help__ = """
- ❍ /runs*:* reply a random string from an array of replies
+ ❍ /joke*:* reply a random string from an array of replies
  ❍ /slap*:* slap a user, or get slapped if not a reply
  ❍ /shrug*:* get shrug XD
  ❍ /table*:* get flip/unflip :v
@@ -342,7 +342,7 @@ __help__ = """
 """
 
 SANITIZE_HANDLER = DisableAbleCommandHandler("sanitize", sanitize)
-RUNS_HANDLER = DisableAbleCommandHandler("runs", runs)
+RUNS_HANDLER = DisableAbleCommandHandler("joke", joke)
 SLAP_HANDLER = DisableAbleCommandHandler("slap", slap)
 PAT_HANDLER = DisableAbleCommandHandler("pat", pat)
 ROLL_HANDLER = DisableAbleCommandHandler("roll", roll)
@@ -359,7 +359,7 @@ WEEBIFY_HANDLER = DisableAbleCommandHandler("weebify", weebify)
 dispatcher.add_handler(WEEBIFY_HANDLER)
 dispatcher.add_handler(SHOUT_HANDLER)
 dispatcher.add_handler(SANITIZE_HANDLER)
-dispatcher.add_handler(RUNS_HANDLER)
+dispatcher.add_handler(JOKE_HANDLER)
 dispatcher.add_handler(SLAP_HANDLER)
 dispatcher.add_handler(PAT_HANDLER)
 dispatcher.add_handler(ROLL_HANDLER)
@@ -373,7 +373,7 @@ dispatcher.add_handler(TABLE_HANDLER)
 
 __mod_name__ = "MEMES"
 __command_list__ = [
-    "runs",
+    "joke",
     "slap",
     "roll",
     "toss",
@@ -389,7 +389,7 @@ __command_list__ = [
     "8ball",
 ]
 __handlers__ = [
-    RUNS_HANDLER,
+    JOKE_HANDLER,
     SLAP_HANDLER,
     PAT_HANDLER,
     ROLL_HANDLER,
