@@ -23,10 +23,10 @@ async def lego(event):
     img = Image.open('./MashaRoBot/resources/blackbg.jpg')
     draw = ImageDraw.Draw(img)
     image_widthz, image_heightz = img.size
-    pointsize = 150
+    pointsize = 200
     fillcolor = "gold"
     shadowcolor = "blue"
-    font = ImageFont.truetype("./MashaRoBot/resources/Chopsic.otf", 330)
+    font = ImageFont.truetype("./MashaRoBot/resources/Chopsic.otf", 200)
     w, h = draw.textsize(text, font=font)
     h += int(h*0.21)
     image_width, image_height = img.size
