@@ -14,7 +14,7 @@ def reply(update, context):
     reply_to_message(update.effective_message, creply)
 
 
-ADD_CCHAT_HANDLER = DisableAbleCommandHandler("kitty", send)
+ADD_CCHAT_HANDLER = DisableAbleCommandHandler("kitty", reply)
 dispatcher.add_handler(ADD_CCHAT_HANDLER)
 __command_list__ = ["kitty"]
 __handlers__ = [ADD_CCHAT_HANDLER]
