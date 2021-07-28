@@ -301,7 +301,7 @@ def help_button(update, context):
         if mod_match:
             module = mod_match.group(1)
             text = (
-                " HELP MENU PROVIDED BY [KITTY](http://t.me/Kittyprobot)* \nl\n *{}*\n".format(
+                " HELP MENU PROVIDED BY [KITTY](http://t.me/Kittyprobot)* \n *{}*\n".format(
                     HELPABLE[module].__mod_name__
                 )
                 + HELPABLE[module].__help__
