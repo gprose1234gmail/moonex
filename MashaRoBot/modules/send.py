@@ -1,9 +1,9 @@
 from telegram.ext import run_async
 
-from Mizuki import dispatcher
-from Mizuki.modules.disable import DisableAbleCommandHandler
-from Mizuki.modules.helper_funcs.alternate import send_message
-from Mizuki.modules.helper_funcs.chat_status import user_admin
+from MashaRoBot import dispatcher
+from MashaRoBot.modules.disable import DisableAbleCommandHandler
+from MashaRoBot.modules.helper_funcs.alternate import send_message
+from MashaRoBot.modules.helper_funcs.chat_status import user_admin
 
 
 @run_async
@@ -16,5 +16,5 @@ def send(update, context):
 
 ADD_CCHAT_HANDLER = DisableAbleCommandHandler("send", send)
 dispatcher.add_handler(ADD_CCHAT_HANDLER)
-__command_list__ = ["send"]
+__command_list__ = ["kitty"]
 __handlers__ = [ADD_CCHAT_HANDLER]
