@@ -93,7 +93,7 @@ buttons = [
     ],
     [
         InlineKeyboardButton(
-            text="TRY INLINE🙂", callback_data="source_"
+            text="TRY INLINE🙂", callback_data="main_connect"
         ),
         InlineKeyboardButton(
             text="support😍",url="https://t.me/kittysupport"
