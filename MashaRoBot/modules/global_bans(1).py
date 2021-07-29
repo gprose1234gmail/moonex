@@ -11,7 +11,7 @@ from telegram.ext import run_async, CommandHandler, MessageHandler, Filters
 from telegram.utils.helpers import mention_html
 
 import MashaRoBot.modules.sql.global_bans_sql as sql
-from MashaRoBot import dispatcher, OWNER_ID, DEV_USERS, DRAGONS, DEMONS, WOLVES, EVENT_LOGS, STRICT_GBAN, spam_watch
+from MashaRoBot import dispatcher, OWNER_ID, DEV_USERS, DRAGONS, DEMONS, WOLVES, EVENT_LOGS, STRICT_GBAN, SPAMWATCH_API
 from MashaRoBot.modules.helper_funcs.chat_status import user_admin, is_user_admin
 from MashaRoBot.modules.helper_funcs.extraction import extract_user, extract_user_and_text
 from MashaRoBot.modules.helper_funcs.filters import CustomFilters
@@ -28,7 +28,7 @@ GBAN_ERRORS = {
     "Peer_id_invalid",
     "Group chat was deactivated",
     "Need to be inviter of a user to kick it from a basic group",
-    "Chat_admin_required",
+    "Chat_admin_required", 
     "Only the creator of a basic group can kick group administrators",
     "Channel_private",
     "Not in the chat",
