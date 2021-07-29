@@ -107,7 +107,10 @@ buttons = [
 
 
 HELP_STRINGS = """
-*WHY DO YOU NEED MY HELP I THOUGHT THAT YOU ARE A GOOD GUY \n HERE IS THE HELP BUTTONS*"""
+*Hey there! My name is [Kitty](https://telegra.ph/file/1deb171608d1bf5743fde.jpg)🥰.
+I'm a modular group management bot with a few fun extras😋! And I can help you with some tamil fun features💥 \
+I am mainly made for Tamil users to Enjoy me ❤️ because here all Tamil Fun features are there😋. Plx check it😇 \
+And you please check down for some commands🤗.*"""
 
 
 DONATE_STRING = """😁😁😁😁😁"""
