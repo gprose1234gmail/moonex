@@ -28,7 +28,7 @@ from MashaRoBot import (
 from MashaRoBot.modules import ALL_MODULES
 from MashaRoBot.modules.helper_funcs.chat_status import is_user_admin
 from MashaRoBot.modules.helper_funcs.misc import paginate_modules
-from telegram import InlineKeyboardButton, InlineKeyboardMarkup, ParseMode, Update
+from telegram import InlineKeyboardButton, InlineKeyboardMarkup, ParseMode, Update,user
 from telegram.error import (
     BadRequest,
     ChatMigrated,
