@@ -83,20 +83,20 @@ KITTY_IMG="https://telegra.ph/file/9509a3e2c1bdc8e092e09.jpg"
 buttons = [
     [
         InlineKeyboardButton(
-            text=" ADD KITTY TO YOUR GROUP ", url="t.me/Kittyprobot?startgroup=true"),
+            text=" Add me 🥰 ", url="t.me/Kittyprobot?startgroup=true"),
     ],
     [
-        InlineKeyboardButton(text="Help", callback_data="help_back"),
+        InlineKeyboardButton(text="Help🤗", callback_data="help_back"),
 
-        InlineKeyboardButton(text="About", callback_data="masha_about"),
+        InlineKeyboardButton(text="About😇", callback_data="masha_about"),
                              
     ],
     [
         InlineKeyboardButton(
-            text="TRY INLINE", callback_data="source_"
+            text="TRY INLINE🙂", callback_data="source_"
         ),
         InlineKeyboardButton(
-            text="support",url="https://t.me/kittysupport"
+            text="support😍",url="https://t.me/kittysupport"
         ),
     ],
 ]
@@ -107,7 +107,7 @@ buttons = [
 
 
 HELP_STRINGS = """
-*Hey there! My name is [Kitty](https://telegra.ph/file/1deb171608d1bf5743fde.jpg)🥰.
+*Hey there! My name is Kitty🥰.
 I'm a modular group management bot with a few fun extras😋! And I can help you with some tamil fun features💥 \
 I am mainly made for Tamil users to Enjoy me ❤️ because here all Tamil Fun features are there😋. Plx check it😇 \
 And you please check down for some commands🤗.*"""
@@ -360,10 +360,10 @@ def Masha_about_callback(update: Update, context: CallbackContext):
     query = update.callback_query
     if query.data == "masha_about":
         query.message.edit_text(
-            text="""Hey are you come again to see me [😃](https://telegra.ph/file/2772d29518df083cb111a.jpg) but i am little busy now 
-                    😁i am always helping others to manage their groups
-                    MY AWESOME SUPPORT GROUP GOES HERE :- @GUARDIANSUPPURT
-                    😘😘😘😘😘😘😘😘😘😘😘😘😘.""",
+            text="""Hey there❤️ . I am kitty
+                    I am an modular pro bot with many fun features😇
+                    Many upcomming updates are waiting for you🥳🥳
+                    For more details visit @kittysupport.""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
