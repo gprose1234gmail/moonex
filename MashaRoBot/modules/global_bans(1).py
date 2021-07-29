@@ -11,7 +11,7 @@ from telegram.ext import run_async, CommandHandler, MessageHandler, Filters
 from telegram.utils.helpers import mention_html
 
 import MashaRoBot.modules.sql.global_bans_sql as sql
-from MashaRoBot import dispatcher, OWNER_ID, DEV_USERS, DRAGONS, DEMONS, WOLVES, GBAN_LOGS, STRICT_GBAN, spam_watch
+from MashaRoBot import dispatcher, OWNER_ID, DEV_USERS, DRAGONS, DEMONS, WOLVES, EVENT_LOGS, STRICT_GBAN, spam_watch
 from MashaRoBot.modules.helper_funcs.chat_status import user_admin, is_user_admin
 from MashaRoBot.modules.helper_funcs.extraction import extract_user, extract_user_and_text
 from MashaRoBot.modules.helper_funcs.filters import CustomFilters
