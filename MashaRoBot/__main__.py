@@ -73,7 +73,7 @@ def get_readable_time(seconds: int) -> str:
     return ping_time
 
 
-PM_START_TEXT = """ வனக்கம் *{}* நன் Kittty [😍](https://telegra.ph/file/2a0e766cb7481414ea9fe.jpg)
+PM_START_TEXT = """ வனக்கம் {mention} நன் Kittty [😍](https://telegra.ph/file/2a0e766cb7481414ea9fe.jpg)
 நான் ஒரு சக்திவாய்ந்த புரோபோட்😃
 நான் பல Fun கருவிகளைக் கொண்டிருக்கிறேன்😋
 Tamil users காக தயாரிக்கப்படுகிறது🥳
@@ -84,6 +84,9 @@ buttons = [
     [
         InlineKeyboardButton(
             text=" Add me🥰 ", url="t.me/Kittyprobot?startgroup=true"),
+
+        InlineKeyboardButton(
+            text=" DEV 👻 ", url="https://t.me/THE_BOSS_OF_TELEGRAM"),
     ],
     [
         InlineKeyboardButton(text="Help🤗", callback_data="help_back"),
