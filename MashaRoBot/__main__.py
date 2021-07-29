@@ -83,20 +83,20 @@ KITTY_IMG="https://telegra.ph/file/9509a3e2c1bdc8e092e09.jpg"
 buttons = [
     [
         InlineKeyboardButton(
-            text="About😇", callback_data="masha_about"),
+            text="Help🤗", callback_data="help_back"),
 
         InlineKeyboardButton(
             text=" DEV 👻 ", url="https://t.me/THE_BOSS_OF_TELEGRAM"),
     ],
     [
-        InlineKeyboardButton(text="Help🤗", callback_data="help_back"),
+        InlineKeyboardButton(text="About😇", callback_data="masha_about"),
 
         InlineKeyboardButton(text="Add me🥰", url="https://t.me/Kittyprobot?startgroup=true"),
                              
     ],
     [
         InlineKeyboardButton(
-            text="Try inline🙂", callback_data="main_connect"
+            text="Connect❣️", callback_data="main_connect"
         ),
         InlineKeyboardButton(
             text="Support😍",url="https://t.me/kittysupport"
