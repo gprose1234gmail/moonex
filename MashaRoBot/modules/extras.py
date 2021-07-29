@@ -1,5 +1,4 @@
 import random
-
 from telegram.ext import run_async, Filters
 from telegram import Message, Chat, Update, Bot, MessageEntity
 from MashaRoBot import dispatcher
