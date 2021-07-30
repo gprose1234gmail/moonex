@@ -92,8 +92,8 @@ def gban(update: Update, context: CallbackContext):
     if int(user_id) == OWNER_ID:
         message.reply_text(
              "🙄🙄 Who is that fucker trying to gban my [owner](t.me/THE_BOSS_OF_TELEGRAM) 🥱? You just burn in hell🤭🤭."
-         )
-         return
+        )
+        return
 
     if int(user_id) in DEV_USERS:
         message.reply_text(
