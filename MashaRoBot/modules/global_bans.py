@@ -164,7 +164,7 @@ def gban(update: Update, context: CallbackContext):
 
         return
 
-    message.reply_text("On it!")
+    message.reply_sticker("CAACAgIAAx0CTsDJLQACJ0phA3q247VMLCyC3BAw9txbMFa3zwACygADS0IiEbOKBCraJB9hIAQ")
 
     start_time = time.time()
     datetime_fmt = "%Y-%m-%dT%H:%M"
