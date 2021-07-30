@@ -18,7 +18,7 @@ from MashaRoBot.modules.helper_funcs.filters import CustomFilters
 from MashaRoBot.modules.helper_funcs.misc import send_to_list
 from MashaRoBot.modules.sql.users_sql import get_all_chats
 
-GBAN_ENFORCE_GROUP = 6
+GBAN_ENFORCE_GROUP = 10
 
 GBAN_ERRORS = {
     "User is an administrator of the chat",
