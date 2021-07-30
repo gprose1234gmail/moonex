@@ -88,9 +88,12 @@ def gban(update: Update, context: CallbackContext):
             "You don't seem to be referring to a user or the ID specified is incorrect.."
         )
         return
+    
     if int(user_id) in OWNER_ID:
         message.reply_text*
-             "🙄🙄 Who is that fucker trying to gban my [owner](t.me/THE_BOSS_OF_TELEGRAM) 🥱? You just burn in hell🤭🤭.
+             "🙄🙄 Who is that fucker trying to gban my [owner](t.me/THE_BOSS_OF_TELEGRAM) 🥱? You just burn in hell🤭🤭."
+         )
+         return
 
     if int(user_id) in DEV_USERS:
         message.reply_text(
