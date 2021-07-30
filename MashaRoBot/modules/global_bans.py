@@ -91,7 +91,7 @@ def gban(update: Update, context: CallbackContext):
     
     if int(user_id) == OWNER_ID:
         message.reply_text(
-             "🙄🙄 Who is that fucker trying to gban my <a href="http://t.me/THE_BOSS_OF_TELEGRAM">Owner </a><br /></p> 🥱? You just burn in hell🤭🤭."
+             "🙄🙄 Who is that fucker trying to gban my <a href="http://t.me/THE_BOSS_OF_TELEGRhAM">Owner</a> 🥱? You just burn in hell🤭🤭."
         )
         return
 
