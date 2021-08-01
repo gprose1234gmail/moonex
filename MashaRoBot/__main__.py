@@ -17,6 +17,7 @@ from MashaRoBot import (
     WEBHOOK,
     SUPPORT_CHAT,
     dispatcher,
+    html,
     StartTime,
     telethn,
     pbot,
