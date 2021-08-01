@@ -1,6 +1,7 @@
 import importlib
 import time
 import re
+Import html
 from sys import argv
 from typing import Optional
 
@@ -17,7 +18,6 @@ from MashaRoBot import (
     WEBHOOK,
     SUPPORT_CHAT,
     dispatcher,
-    html,
     StartTime,
     telethn,
     pbot,
