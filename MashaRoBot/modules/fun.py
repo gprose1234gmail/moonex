@@ -335,7 +335,8 @@ def weebify(update: Update, context: CallbackContext):
 
 
 __help__ = """
- ❍ /joke*:* reply a random string from an array of replies
+ ❍ /joke*:* reply a random string from an array of replie
+ ❍ /abuse*:* A"buse someone in tamil
  ❍ /slap*:* slap a user, or get slapped if not a reply
  ❍ /shrug*:* get shrug XD
  ❍ /table*:* get flip/unflip :v
@@ -353,6 +354,7 @@ __help__ = """
 
 SANITIZE_HANDLER = DisableAbleCommandHandler("sanitize", sanitize)
 JOKE_HANDLER = DisableAbleCommandHandler("joke", joke)
+ABUSE_HANDLER= DisableAbleCommandHandler("abuse", abuse)
 SLAP_HANDLER = DisableAbleCommandHandler("slap", slap)
 PAT_HANDLER = DisableAbleCommandHandler("pat", pat)
 ROLL_HANDLER = DisableAbleCommandHandler("roll", roll)
@@ -380,10 +382,12 @@ dispatcher.add_handler(RLG_HANDLER)
 dispatcher.add_handler(DECIDE_HANDLER)
 dispatcher.add_handler(EIGHTBALL_HANDLER)
 dispatcher.add_handler(TABLE_HANDLER)
+dispatcher.add_handler(ABUSE_HANDLER)
 
 __mod_name__ = "MEMES"
 __command_list__ = [
     "joke",
+    "abuse",
     "slap",
     "roll",
     "toss",
@@ -400,6 +404,7 @@ __command_list__ = [
 ]
 __handlers__ = [
     JOKE_HANDLER,
+    ABUSE_HANDLER,
     SLAP_HANDLER,
     PAT_HANDLER,
     ROLL_HANDLER,
