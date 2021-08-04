@@ -86,12 +86,12 @@ buttons = [
             text="Help🤗", callback_data="help_back"),
 
         InlineKeyboardButton(
-            text=" DEV 👻 ", url="https://t.me/THE_BOSS_OF_TELEGRAM"),
+            text=" DEV 👻 ", url="https://t.me/BOSS_OF_THE_TELEGRAM"),
     ],
     [
         InlineKeyboardButton(text="About😇", callback_data="masha_about"),
 
-        InlineKeyboardButton(text="Add me🥰", url="https://t.me/Kittyprobot?startgroup=true"),
+        InlineKeyboardButton(text="Add me🥰", url="https://t.me/amalaprobot?startgroup=true"),
                              
     ],
     [
