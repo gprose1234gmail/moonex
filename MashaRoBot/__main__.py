@@ -73,7 +73,7 @@ def get_readable_time(seconds: int) -> str:
     return ping_time
 
 
-PM_START_TEXT = """ வனக்கம் {} நன் Kittty [😍](https://telegra.ph/file/2a0e766cb7481414ea9fe.jpg)
+PM_START_TEXT = """ வனக்கம்🥳 நன் Amala[😍](https://telegra.ph/file/4149d526cfb0c8bb93b90.jpg)
 நான் ஒரு சக்திவாய்ந்த புரோபோட்😃
 நான் பல Fun கருவிகளைக் கொண்டிருக்கிறேன்😋
 Tamil users காக தயாரிக்கப்படுகிறது🥳
@@ -110,7 +110,7 @@ buttons = [
 
 
 HELP_STRINGS = """
-*Hey there! My name is Kitty🥰.
+*Hey there! My name is Amala🥰.
 I'm a modular group management bot with a few fun extras😋! And I can help you with some tamil fun features💥 \
 I am mainly made for Tamil users to Enjoy me ❤️ because here all Tamil Fun features are there😋. Plx check it😇 \
 And you please check down for some commands🤗.*"""
@@ -363,7 +363,7 @@ def Masha_about_callback(update: Update, context: CallbackContext):
     query = update.callback_query
     if query.data == "masha_about":
         query.message.edit_text(
-            text="""Hey there❤️ . I am kitty
+            text="""Hey there❤️ . I am amala🥳
                     I am an modular pro bot with many fun features😇
                     Many upcomming updates are waiting for you🥳🥳
                     For more details visit @kittysupport.""",
