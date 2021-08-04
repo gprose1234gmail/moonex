@@ -421,7 +421,7 @@ __command_list__ = [
 __handlers__ = [
     JOKE_HANDLER,
     ABUSE_HANDLER,
-    SING_HANDLER
+    SING_HANDLER,
     SLAP_HANDLER,
     PAT_HANDLER,
     ROLL_HANDLER,
