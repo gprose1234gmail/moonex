@@ -227,6 +227,18 @@ def abuse(update: Update, context: CallbackContext):
         else update.effective_message.reply_text
     )
     reply_text(random.choice(fun_strings.ABUSE_STRINGS))
+    
+    
+    
+@run_async
+def sing(update: Update, context: CallbackContext):
+    reply_text = (
+        update.effective_message.reply_to_message.reply_text
+        if update.effective_message.reply_to_message
+        else update.effective_message.reply_text
+    )
+    reply_text(random.choice(fun_strings.SING_STRINGS))
+ 
 
 
 @run_async
@@ -337,6 +349,7 @@ def weebify(update: Update, context: CallbackContext):
 __help__ = """
  ❍ /joke*:* reply a random string from an array of replie
  ❍ /abuse*:* Abuse someone in tamil
+ ❍ /sing*:* Type some ramdom tamil song lines
  ❍ /slap*:* slap a user, or get slapped if not a reply
  ❍ /shrug*:* get shrug XD
  ❍ /table*:* get flip/unflip :v
@@ -355,6 +368,7 @@ __help__ = """
 SANITIZE_HANDLER = DisableAbleCommandHandler("sanitize", sanitize)
 JOKE_HANDLER = DisableAbleCommandHandler("joke", joke)
 ABUSE_HANDLER= DisableAbleCommandHandler("abuse", abuse)
+SING_HANDLER= DisableAbleCommandHandler("sing", sing)
 SLAP_HANDLER = DisableAbleCommandHandler("slap", slap)
 PAT_HANDLER = DisableAbleCommandHandler("pat", pat)
 ROLL_HANDLER = DisableAbleCommandHandler("roll", roll)
@@ -383,11 +397,13 @@ dispatcher.add_handler(DECIDE_HANDLER)
 dispatcher.add_handler(EIGHTBALL_HANDLER)
 dispatcher.add_handler(TABLE_HANDLER)
 dispatcher.add_handler(ABUSE_HANDLER)
+dispatcher.add_handler(SING_HANDLER)
 
 __mod_name__ = "MEMES"
 __command_list__ = [
     "joke",
     "abuse",
+    "sing",
     "slap",
     "roll",
     "toss",
@@ -405,6 +421,7 @@ __command_list__ = [
 __handlers__ = [
     JOKE_HANDLER,
     ABUSE_HANDLER,
+    SING_HANDLER
     SLAP_HANDLER,
     PAT_HANDLER,
     ROLL_HANDLER,
