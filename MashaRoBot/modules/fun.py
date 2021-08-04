@@ -336,7 +336,7 @@ def weebify(update: Update, context: CallbackContext):
 
 __help__ = """
  ❍ /joke*:* reply a random string from an array of replie
- ❍ /abuse*:* A"buse someone in tamil
+ ❍ /abuse*:* Abuse someone in tamil
  ❍ /slap*:* slap a user, or get slapped if not a reply
  ❍ /shrug*:* get shrug XD
  ❍ /table*:* get flip/unflip :v
