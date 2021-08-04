@@ -227,17 +227,6 @@ def abuse(update: Update, context: CallbackContext):
         else update.effective_message.reply_text
     )
     reply_text(random.choice(fun_strings.ABUSE_STRINGS))
-    
-    
-    
-@run_async
-def sing(update: Update, context: CallbackContext):
-    reply_text = (
-        update.effective_message.reply_to_message.reply_text
-        if update.effective_message.reply_to_message
-        else update.effective_message.reply_text
-    )
-    reply_text(random.choice(fun_strings.SING_STRINGS))
  
 
 
