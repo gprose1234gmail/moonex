@@ -357,7 +357,6 @@ __help__ = """
 SANITIZE_HANDLER = DisableAbleCommandHandler("sanitize", sanitize)
 JOKE_HANDLER = DisableAbleCommandHandler("joke", joke)
 ABUSE_HANDLER= DisableAbleCommandHandler("abuse", abuse)
-SING_HANDLER= DisableAbleCommandHandler("sing", sing)
 SLAP_HANDLER = DisableAbleCommandHandler("slap", slap)
 PAT_HANDLER = DisableAbleCommandHandler("pat", pat)
 ROLL_HANDLER = DisableAbleCommandHandler("roll", roll)
@@ -392,7 +391,6 @@ __mod_name__ = "MEMES"
 __command_list__ = [
     "joke",
     "abuse",
-    "sing",
     "slap",
     "roll",
     "toss",
@@ -410,7 +408,6 @@ __command_list__ = [
 __handlers__ = [
     JOKE_HANDLER,
     ABUSE_HANDLER,
-    SING_HANDLER,
     SLAP_HANDLER,
     PAT_HANDLER,
     ROLL_HANDLER,
