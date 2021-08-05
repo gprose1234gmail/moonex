@@ -52,7 +52,7 @@ def sanitize(update: Update, context: CallbackContext):
 
 
 @run_async
-def fum(update: Update, context: CallbackContext):
+def fun(update: Update, context: CallbackContext):
     bot, args = context.bot, context.args
     message = update.effective_message
     chat = update.effective_chat
