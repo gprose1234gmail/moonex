@@ -52,7 +52,7 @@ def sanitize(update: Update, context: CallbackContext):
 
 
 @run_async
-def slap(update: Update, context: CallbackContext):
+def fum(update: Update, context: CallbackContext):
     bot, args = context.bot, context.args
     message = update.effective_message
     chat = update.effective_chat
@@ -339,7 +339,7 @@ __help__ = """
  ❍ /joke*:* reply a random string from an array of replie
  ❍ /abuse*:* Abuse someone in tamil
  ❍ /sing*:* Type some ramdom tamil song lines
- ❍ /slap*:* slap a user, or get slapped if not a reply
+ ❍ /fun*:* reply any one and type /fun and see the magic.
  ❍ /shrug*:* get shrug XD
  ❍ /table*:* get flip/unflip :v
  ❍ /decide*:* Randomly answers yes/no/maybe
@@ -357,7 +357,7 @@ __help__ = """
 SANITIZE_HANDLER = DisableAbleCommandHandler("sanitize", sanitize)
 JOKE_HANDLER = DisableAbleCommandHandler("joke", joke)
 ABUSE_HANDLER= DisableAbleCommandHandler("abuse", abuse)
-SLAP_HANDLER = DisableAbleCommandHandler("slap", slap)
+FUN_HANDLER = DisableAbleCommandHandler("fun", fun)
 PAT_HANDLER = DisableAbleCommandHandler("pat", pat)
 ROLL_HANDLER = DisableAbleCommandHandler("roll", roll)
 TOSS_HANDLER = DisableAbleCommandHandler("toss", toss)
@@ -374,7 +374,7 @@ dispatcher.add_handler(WEEBIFY_HANDLER)
 dispatcher.add_handler(SHOUT_HANDLER)
 dispatcher.add_handler(SANITIZE_HANDLER)
 dispatcher.add_handler(JOKE_HANDLER)
-dispatcher.add_handler(SLAP_HANDLER)
+dispatcher.add_handler(FUN_HANDLER)
 dispatcher.add_handler(PAT_HANDLER)
 dispatcher.add_handler(ROLL_HANDLER)
 dispatcher.add_handler(TOSS_HANDLER)
@@ -390,7 +390,7 @@ __mod_name__ = "MEMES"
 __command_list__ = [
     "joke",
     "abuse",
-    "slap",
+    "fun",
     "roll",
     "toss",
     "shrug",
@@ -407,7 +407,7 @@ __command_list__ = [
 __handlers__ = [
     JOKE_HANDLER,
     ABUSE_HANDLER,
-    SLAP_HANDLER,
+    FUN_HANDLER,
     PAT_HANDLER,
     ROLL_HANDLER,
     TOSS_HANDLER,
