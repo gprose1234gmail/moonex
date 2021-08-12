@@ -1,4 +1,4 @@
-from MashaRobot import pbot as app
+from pyrogram import pbot as app
 from MashaRobot.utils.dbfunc import get_couple, save_couple
 from pyrogram import filters
 import random
