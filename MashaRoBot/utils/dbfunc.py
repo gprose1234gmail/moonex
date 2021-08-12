@@ -1,4 +1,4 @@
-from YoneRobot.mongo import db
+from MashaRobot.mongo import db
 from typing import Dict, List, Union
 
 
