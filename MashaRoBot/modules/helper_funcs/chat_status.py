@@ -199,7 +199,7 @@ def user_admin(func):
                 pass
         else:
             update.effective_message.reply_text(
-                "Who dis non-admin telling me what to do? You want a punch?"
+                "Admins ஆள் மட்டுமே இதை உபயோரிக்க முடியும்😐,போய் வேறு ஏதாவது வேலை இருந்தா அதை பாருங்கள்🥱"
             )
 
     return is_admin
