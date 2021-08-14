@@ -114,8 +114,8 @@ def dev_plus(func):
                 pass
         else:
             update.effective_message.reply_text(
-                "This is a developer restricted command."
-                " You do not have permissions to run this."
+                "நீங்கள் யார்🙄"
+                " You do not have permissions to run this Visit: @kittysupport."
             )
 
     return is_dev_plus_func
@@ -138,8 +138,7 @@ def sudo_plus(func):
             except:
                 pass
         else:
-            update.effective_message.reply_text(
-                "Who dis non-admin telling me what to do? You want a punch?"
+           update.effective_message.reply_text("Admins ஆள் மட்டுமே இதை உபயோரிக்க முடியும்😐,போய் வேறு ஏதாவது வேலை இருந்தா அதை பாருங்கள்🥱"
             )
 
     return is_sudo_plus_func
