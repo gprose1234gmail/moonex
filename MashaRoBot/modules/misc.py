@@ -105,14 +105,14 @@ Output: `1.0 USD = 75.505 INR`
 
 """
 
-ECHO_HANDLER = DisableAbleCommandHandler("echo", echo, filters=Filters.group)
+ECHO_HANDLER = DisableAbleCommandHandler("say", echo, filters=Filters.group)
 MD_HELP_HANDLER = CommandHandler("markdownhelp", markdown_help)
 
 dispatcher.add_handler(ECHO_HANDLER)
 dispatcher.add_handler(MD_HELP_HANDLER)
 
 __mod_name__ = "EXTRAS"
-__command_list__ = ["id", "echo"]
+__command_list__ = ["id", "say"]
 __handlers__ = [
     ECHO_HANDLER,
     MD_HELP_HANDLER,
