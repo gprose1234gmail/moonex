@@ -16,8 +16,8 @@
   <img src="https://telegra.ph/file/2a0e766cb7481414ea9fe.jpg">
 </p>
 
-# Kittypobot
-Me On Telegram [✨Kitty✨](https://t.me/Kittyprobot)
+# Amalapobot
+Me On Telegram [✨Amala✨](https://t.me/amalaprobot)
 This is just a demo bot.. Don't try to add to your group.. Create your own bot 
 ## How To Host
 The easiest way to deploy this Bot
