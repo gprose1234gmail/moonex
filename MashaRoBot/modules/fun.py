@@ -54,13 +54,14 @@ def sanitize(update: Update, context: CallbackContext):
 @run_async
 def guess(bot: Bot, update: Update):
     rep = update.effective_message
+    judger = ["<b>is lying!</b>", "<b>is telling the truth!</b>"]
     msg = ""
     msg = update.effective_message.reply_to_message
     if not msg:
         rep.reply_text("Reply to someone's message to judge them!")
     else:
         user = msg.from_user.first_name
-    res = random.choice(fun_strings.GUESS_STRINGS)
+    res = random.choice(judger)
     reply = msg.reply_text(f"{user} {res}", parse_mode=ParseMode.HTML)
 
 
