@@ -133,14 +133,16 @@ SLAP_MASHA_TEMPLATES = (
 )
 
 SLAP_TEMPLATES = (
-    "{user2} was in love with {user1} 🥰🤣",
-    "{user2} Nengal oru loosu nu {user1} soldrar🤣",
-    "{user1}    ,    {user2} shappa deivangala pm la poi love panunga pa 🤣",
-    "{user2}   and    {user1} are husband and wife . Avanga 2nd peru vela vetti ilama sutheetu irukanga . athanala tha tele vandhurukanga🤣🤣",
-    "{user2} nenga tha samantha🥰 {user1} tha vijay🤣🤣🤣 . Ippa theri movie ooduthu🥱🤣",
-    "{user2} vai kolai muyarchi 🤪. Aadharathil sikkiya {user1} 🤣🤣",
-    "{user1} dai unaku ella fun sola mudiyathu kelambu🤣",
-    "{user2} + {user1} = love🥰",
+    "{user2} 𝗶𝘀 𝘀𝗶𝗴𝗵𝘁𝗶𝗻𝗴 𝗼𝗻𝗲 𝗴𝗶𝗿𝗹 🤣",
+    "{user2} 𝗶𝘀 𝗯𝗿𝘂𝘀𝗵𝗶𝗻𝗴 😁",
+    "{user1} 𝗶𝘀 𝗯𝗮𝘁𝗵𝗶𝗻𝗴 𝗮𝗻𝗱 𝗰𝗵𝗮𝘁𝘁𝗶𝗻𝗴 🤣",
+    "{user2} 𝗶𝘀 𝘀𝗶𝗻𝗴𝗶𝗻𝗴 🎼 ",
+    "{user2} 𝗶𝘀 𝘀𝗹𝗲𝗲𝗽𝗶𝗻𝗴 😴",
+    "{user2} 𝗶𝘀 𝗶𝗻 𝗵𝗼𝗻𝗲𝘆𝗺𝗼𝗼𝗻 🤣",
+    "{user2} 𝗶𝘀 𝘄𝗿𝗶𝘁𝗶𝗻𝗴 𝗵𝘄 🤭",
+    "{user2} 𝗶𝘀 𝘀𝘁𝘂𝗱𝗶𝗻𝗴 😌",
+    "{user2} 𝗶𝘀 𝗳𝗲𝗲𝗹𝗶𝗻𝗴 🥺",
+    "{user2} 𝗶𝘀 𝗱𝗼𝗶𝗻𝗴 𝗯𝗮𝗱 𝘁𝗵𝗶𝗻𝗴 😳",
     
 )
 
