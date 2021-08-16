@@ -55,6 +55,7 @@ JOKE_STRINGS = (
 GUESS_STRINGS = (
     "<b> is brushing 😁",
     "<b> is watching tv😌"
+    )
 
 ABUSE_STRINGS = (
 "Palla odachi kaila kuduthuruven🥱",
