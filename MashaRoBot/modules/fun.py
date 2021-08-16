@@ -67,7 +67,7 @@ def guess(bot: Bot, update: Update):
 
 
 @run_async
-def fun(update: Update, context: CallbackContext):
+def guess(update: Update, context: CallbackContext):
     bot, args = context.bot, context.args
     message = update.effective_message
     chat = update.effective_chat
@@ -145,11 +145,24 @@ def pat(update: Update, context: CallbackContext):
         user1 = bot.first_name
         user2 = curr_user
 
-    pat_type == "Text":
-        temp = random.choice(fun_strings.PAT_TEMPLATES)
-        reply = temp.format(user1=user1, user2=user2)
-        reply_to.reply_text(reply, parse_mode=ParseMode.HTML)
-
+    pat_type = random.choice(("Text", "Gif", "Sticker")) 
+    if pat_type == "Gif": 
+        try: 
+            temp = random.choice(fun_strings.PAT_GIFS) 
+            reply_to.reply_animation(temp) 
+         except BadRequest: 
+             pat_type = "Text" 
+                
+    if pat_type == "Sticker": 
+        try: 
+            temp = random.choice(fun_strings.PAT_STICKERS) 
+            reply_to.reply_sticker(temp) 
+         except BadRequest: 
+            pat_type = "Text" 
+    if pat_type == "Text": 
+            temp = random.choice(fun_strings.PAT_TEMPLATES) 
+            reply = temp.format(user1=user1, user2=user2) 
+            reply_to.reply_text(reply, parse_mode=ParseMode.HTML)
 
 @run_async
 def roll(update: Update, context: CallbackContext):
@@ -339,8 +352,7 @@ __help__ = """
  ❍ /joke*:* reply a random string from an array of replie
  ❍ /abuse*:* Abuse someone in tamil
  ❍ /sing*:* Type some ramdom tamil song lines
- ❍ /fun*:* reply any one and type /fun and see the magic.
- ❍ /guess*:* Reply to any one to guess them what they are doing
+ ❍ /guess*:* reply any one to guess what they are doing
  ❍ /shrug*:* get shrug XD
  ❍ /table*:* get flip/unflip :v
  ❍ /decide*:* Randomly answers yes/no/maybe
@@ -358,7 +370,6 @@ __help__ = """
 SANITIZE_HANDLER = DisableAbleCommandHandler("sanitize", sanitize)
 JOKE_HANDLER = DisableAbleCommandHandler("joke", joke)
 ABUSE_HANDLER= DisableAbleCommandHandler("abuse", abuse)
-FUN_HANDLER = DisableAbleCommandHandler("fun", fun)
 GUESS_HANDLER= DisableAbleCommandHandler("guess", guess)
 PAT_HANDLER = DisableAbleCommandHandler("pat", pat)
 ROLL_HANDLER = DisableAbleCommandHandler("roll", roll)
@@ -376,7 +387,6 @@ dispatcher.add_handler(WEEBIFY_HANDLER)
 dispatcher.add_handler(SHOUT_HANDLER)
 dispatcher.add_handler(SANITIZE_HANDLER)
 dispatcher.add_handler(JOKE_HANDLER)
-dispatcher.add_handler(FUN_HANDLER)
 dispatcher.add_handler(GUESS_HANDLER)
 dispatcher.add_handler(PAT_HANDLER)
 dispatcher.add_handler(ROLL_HANDLER)
@@ -393,8 +403,7 @@ __mod_name__ = "MEMES"
 __command_list__ = [
     "joke",
     "abuse",
-    "fun",
-    "guess"
+    "guess",
     "roll",
     "toss",
     "shrug",
@@ -411,7 +420,6 @@ __command_list__ = [
 __handlers__ = [
     JOKE_HANDLER,
     ABUSE_HANDLER,
-    FUN_HANDLER,
     GUESS_HANDLER,
     PAT_HANDLER,
     ROLL_HANDLER,
