@@ -11,5 +11,6 @@ __help__="""
 ❍/end - stop music play
 ❍/userbotjoin - invite assistant to your chat
 ❍/admincache - Refresh admin list
+"""
 
 __Mod_name__="Vc music🥰"
