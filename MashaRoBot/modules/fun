@@ -49,6 +49,20 @@ def sanitize(update: Update, context: CallbackContext):
         else message.reply_animation
     )
     reply_animation(random.choice(fun_strings.GIFS), caption=f"*Sanitizes {name}*")
+    
+    
+@run_async
+def guess(bot: Bot, update: Update):
+    rep = update.effective_message
+    msg = ""
+    msg = update.effective_message.reply_to_message
+    if not msg:
+        rep.reply_text("Reply to someone's message to judge them!")
+    else:
+        user = msg.from_user.first_name
+    res = random.choice(fun_strings.GUESS_STRINGS)
+    reply = msg.reply_text(f"{user} {res}", parse_mode=ParseMode.HTML)
+
 
 
 @run_async
