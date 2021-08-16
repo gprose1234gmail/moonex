@@ -227,12 +227,11 @@ def start(update: Update, context: CallbackContext):
                 timeout=60,
             )
     else:
-        update.effective_message.reply_text(
-            "I'm awake already!\n<b>Haven't slept since:</b> <code>{}</code>".format(
-                uptime
-            ),
-            parse_mode=ParseMode.HTML,
-        )
+        update.effective_message.reply_text("Hey❤️ I am amala🥳.\nHow can i help you?",
+                                           reply_markup=InlineKeyboardMarkup(
+                                               [[InlineKeyboardButton(text="⚜️Help",url="t.me/amalaprobot?start=help")],
+                                               [InlineKeyboardButton(text="Creator👿",url="https://t.me/boss_of_the_telegram")]])) 
+        return
 
 
 def error_handler(update, context):
@@ -307,7 +306,7 @@ def help_button(update, context):
         if mod_match:
             module = mod_match.group(1)
             text = (
-                " *HELP MENU PROVIDED BY* [KITTY](http://t.me/Kittyprobot) \n *{}*\n".format(
+                " *HELP MENU PROVIDED BY* [Amala🥰](http://t.me/amalaprobot) \n *{}*\n".format(
                     HELPABLE[module].__mod_name__
                 )
                 + HELPABLE[module].__help__
