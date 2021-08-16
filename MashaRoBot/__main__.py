@@ -73,10 +73,12 @@ def get_readable_time(seconds: int) -> str:
     return ping_time
 
 
-PM_START_TEXT = """ வனக்கம்🥳 நன் Amala😍
+PM_START_TEXT = """ வனக்கம்🥳 நன் Amala[😍](https://telegra.ph/file/82419ed32488eba344fe1.jpg)
 நான் ஒரு சக்திவாய்ந்த புரோபோட்😃
+
 நான் பல Fun கருவிகளைக் கொண்டிருக்கிறேன்😋
 Tamil users காக தயாரிக்கப்படுகிறது🥳
+
 உங்கள் குழுக்களில் என்னைச் சேர்த்துக் கொன்டு மகிழுங்கள்🥰 """
 
 START_IMG="https://telegra.ph/file/9509a3e2c1bdc8e092e09.jpg"
@@ -99,7 +101,7 @@ buttons = [
             text="Connect❣️", callback_data="connect_chat"
         ),
         InlineKeyboardButton(
-            text="Support😍",url="https://t.me/kittysupport"
+            text="Support😍",url="https://t.me/amalasupport"
         ),
     ],
 ]
