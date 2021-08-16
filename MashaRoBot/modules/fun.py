@@ -354,6 +354,7 @@ __help__ = """
  ❍ /abuse*:* Abuse someone in tamil
  ❍ /sing*:* Type some ramdom tamil song lines
  ❍ /fun*:* reply any one and type /fun and see the magic.
+ ❍ /guess*:* Reply to any one to guess them what they are doing
  ❍ /shrug*:* get shrug XD
  ❍ /table*:* get flip/unflip :v
  ❍ /decide*:* Randomly answers yes/no/maybe
@@ -372,6 +373,7 @@ SANITIZE_HANDLER = DisableAbleCommandHandler("sanitize", sanitize)
 JOKE_HANDLER = DisableAbleCommandHandler("joke", joke)
 ABUSE_HANDLER= DisableAbleCommandHandler("abuse", abuse)
 FUN_HANDLER = DisableAbleCommandHandler("fun", fun)
+GUESS_HANDLER= DisableAbleCommandHandler("guess", guess)
 PAT_HANDLER = DisableAbleCommandHandler("pat", pat)
 ROLL_HANDLER = DisableAbleCommandHandler("roll", roll)
 TOSS_HANDLER = DisableAbleCommandHandler("toss", toss)
@@ -389,6 +391,7 @@ dispatcher.add_handler(SHOUT_HANDLER)
 dispatcher.add_handler(SANITIZE_HANDLER)
 dispatcher.add_handler(JOKE_HANDLER)
 dispatcher.add_handler(FUN_HANDLER)
+dispatcher.add_handler(GUESS_HANDLER)
 dispatcher.add_handler(PAT_HANDLER)
 dispatcher.add_handler(ROLL_HANDLER)
 dispatcher.add_handler(TOSS_HANDLER)
@@ -405,6 +408,7 @@ __command_list__ = [
     "joke",
     "abuse",
     "fun",
+    "guess"
     "roll",
     "toss",
     "shrug",
@@ -422,6 +426,7 @@ __handlers__ = [
     JOKE_HANDLER,
     ABUSE_HANDLER,
     FUN_HANDLER,
+    GUESS_HANDLER,
     PAT_HANDLER,
     ROLL_HANDLER,
     TOSS_HANDLER,
