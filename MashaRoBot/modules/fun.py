@@ -150,14 +150,14 @@ def pat(update: Update, context: CallbackContext):
         try: 
             temp = random.choice(fun_strings.PAT_GIFS) 
             reply_to.reply_animation(temp) 
-         except BadRequest: 
+        except BadRequest: 
              pat_type = "Text" 
                 
     if pat_type == "Sticker": 
         try: 
             temp = random.choice(fun_strings.PAT_STICKERS) 
             reply_to.reply_sticker(temp) 
-         except BadRequest: 
+        except BadRequest: 
             pat_type = "Text" 
     if pat_type == "Text": 
             temp = random.choice(fun_strings.PAT_TEMPLATES) 
