@@ -12,5 +12,4 @@ __help__="""
 ❍/userbotjoin - invite assistant to your chat
 ❍/admincache - Refresh admin list
 """
-
-__Mod_name__="Vc music🥰"
+__Mod_name__ = "Vc music🥰"
