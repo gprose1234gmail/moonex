@@ -1,6 +1,6 @@
-from AmeliaRobot import pbot as app
-from AmeliaRobot.utils.errors import capture_err
-from AmeliaRobot.utils.dbfunc import get_couple, save_couple
+from MashaRobot import pbot as app
+from MashaRobot.utils.errors import capture_err
+from MashaRobot.utils.dbfunc import get_couple, save_couple
 from pyrogram import filters
 import random
 from datetime import datetime
