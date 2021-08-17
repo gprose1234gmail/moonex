@@ -1,4 +1,4 @@
-from MashaRobot import pbot as app
+from Mashapbot import pbot as app
 from MashaRobot.utils.errors import capture_err
 from MashaRobot.utils.dbfunc import get_couple, save_couple
 from pyrogram import filters
