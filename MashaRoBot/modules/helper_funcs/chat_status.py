@@ -114,8 +114,7 @@ def dev_plus(func):
                 pass
         else:
             update.effective_message.reply_text(
-                "நீங்கள் யார்🙄"
-                " You do not have permissions to run this Visit: @kittysupport."
+                "Road la poravan pecha ella na ethuku ketkalum🥱"
             )
 
     return is_dev_plus_func
