@@ -88,7 +88,7 @@ buttons = [
             text="Help🤗", callback_data="help_back"),
 
         InlineKeyboardButton(
-            text=" DEV 👻 ", url="https://t.me/BOSS_OF_THE_TELEGRAM"),
+            text="Owner🕺 ", url="https://t.me/im_amala"),
     ],
     [
         InlineKeyboardButton(text="About😇", callback_data="masha_about"),
