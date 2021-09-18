@@ -74,7 +74,7 @@ async def can_change_info(message):
         isinstance(p, types.ChannelParticipantAdmin) and p.admin_rights.change_info
     )
 
-@register(pattern="(nightmode|Nightmode|NightMode|nt) ?(.*)")
+@register(pattern="^/(nightmode|Nightmode|NightMode) ?(.*)")
 async def profanity(event):
     if event.fwd_from:
         return
@@ -86,7 +86,7 @@ async def profanity(event):
            await event.reply("Only admins can execute this command!")
            return
         else:
-          if not await can_change_info(message=dmod):
+          if not await can_change_info(message=event):
             await event.reply("You are missing the following rights to use this command:CanChangeinfo")
             return
     if not input:
@@ -129,7 +129,7 @@ async def job_close():
     for pro in chats:
         try:
             await tbot.send_message(
-              int(pro.chat_id), "12:00 Am, Group Is Closing Till 6 Am. Night Mode Started ! \n**Powered By Evlie**"
+              int(pro.chat_id), "12:00 Am, Group Is Closing Till 6 Am. Night Mode Started ! \n**Powered By AMALA**"
             )
             await tbot(
             functions.messages.EditChatDefaultBannedRightsRequest(
@@ -151,7 +151,7 @@ async def job_open():
     for pro in chats:
         try:
             await tbot.send_message(
-              int(pro.chat_id), "06:00 Am, Group Is Opening.\n**Powered By Masha**"
+              int(pro.chat_id), "06:00 Am, Group Is Opening.\n**Powered By AMALA**"
             )
             await tbot(
             functions.messages.EditChatDefaultBannedRightsRequest(
@@ -167,12 +167,15 @@ scheduler.add_job(job_open, trigger="cron", hour=5, minute=58)
 scheduler.start()
 
 
-__help__ = """
-
+__help__ = f"""
  ❍ /nightmode on/off
-
+ 
 **Note:** Night Mode chats get Automatically closed at 12pm(IST)
 and Automatically openned at 6am(IST) To Prevent Night Spams.
 """
 
-__mod_name__ = "N MODE"
+__mod_name__ = "ɴ-ᴍᴏᴅᴇ"
+
+
+
+ 
