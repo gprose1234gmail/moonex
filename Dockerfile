@@ -35,7 +35,7 @@ RUN apt update && apt upgrade -y && \
     libxslt1-dev \
     python3-pip \
     python3-requests \
-    python3-sqlalchemy \
+    Python-SQLALCHEMY==1.4.29 \
     python3-tz \
     python3-aiohttp \
     openssl \
